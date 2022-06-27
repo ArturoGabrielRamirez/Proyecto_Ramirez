@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="images/icon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="style/style.css">
+	<title>Pokemonstore</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="header__title">
+			<a class="header__title-link" href="index.html"><img class="header__title-image" src="images/logo.png"
+					alt="logo principal"></a>
+		</h1>
+		<nav class="center navbar">
+			<a href="views/articulos.html"
+				class="material-symbols-outlined navbar__icon navbar__icon--yellow">storefront</a>
+			<a href="views/nosotros.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
+				location_away</a>
+			<a href="views/ayuda.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
+				contact_support</a>
+			<a href="views/carrito.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
+				shopping_cart
+			</a>
+		</nav>
+	</header>
+
+
+
+	<main class="center">
+		<div class="padding divsearch">
+			<h2 class="divsearch__title">Busca el producto que necesitas</h2>
+			<form action="views/articulos.html">
+				<label class="material-symbols-outlined divsearch__label" for="busqueda">search</label>
+				<input class="divsearch__input" type="text" name="busqueda" required id="busqueda"
+					placeholder="Buscar...">
+				<input class="button" type="submit" value="Buscar">
+			</form>
+		</div>
+		<section class="padding">
+			<h2 class="page-title">Ofertas del dia</h2>
+			<div id="ofertas" class="container">
+
+				<article class="product">
+					<img class="product__image" src="images/1.jpg" alt="Gorros Pokemon">
+					<h3 class="product__title">Gorros Pokemon</h3>
+					<p class="product__description">Gorros con diseño Pokemon a eleccion</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+				<article class="product">
+					<img class="product__image" src="images/2.jpg" alt="Funko Pop Eevee">
+					<h3 class="product__title">Funko Pop Eevee</h3>
+					<p class="product__description">Muñeco Funko Pop coleccionable</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+				<article class="product">
+					<img class="product__image" src="images/3.jpg" alt="Pokeball Plus">
+					<h3 class="product__title">Pokeball Plus</h3>
+					<p class="product__description">Joystick inalámbrico Ninintendo</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+				<article class="product">
+					<img class="product__image" src="images/4.jpg" alt="Pikachu Toy">
+					<h3 class="product__title">Pikachu Toy</h3>
+					<p class="product__description">Muñecos picachu y pichu coleccionables</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+				<article class="product">
+					<img class="product__image" src="images/5.jpg" alt="Llaveros Pokemon">
+					<h3 class="product__title">Laveros Pokemon</h3>
+					<p class="product__description">Coleccion Aleatoria de llaveros. Hazte con todos!</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+				<article class="product">
+					<img class="product__image" src="images/6.jpg" alt="Pokemon Ruby y Zafiro">
+					<h3 class="product__title">Pokemon Ruby y Zafiro</h3>
+					<p class="product__description">Hazte con este combo del 40% con esta super oferta</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+				<article class="product">
+					<img class="product__image" src="images/7.jpg" alt="Pokemon Ultra Sol y Ultra Luna">
+					<h3 class="product__title">Pokemon Ultra Sol y Ultra Luna</h3>
+					<p class="product__description">Ya disponible la nueva region!</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+				<article class="product">
+					<img class="product__image" src="images/8.jpg" alt="Estuche Nintendo">
+					<h3 class="product__title">Estuche Nintendo</h3>
+					<p class="product__description">Transporta tu consola con la mayor proteccion y comodidad</p>
+					<a href="views/articulos.html" class="product__link product__link--yellow">Ver Mas<span
+							class="material-symbols-outlined product__icon">shopping_cart</span></a>
+				</article>
+			</div>
+
+		</section>
+	</main>
+	<footer class="center footer">
+		<nav>
+			<a id="facebook" class="footer__link" href="https://www.facebook.com/" target="_blank">
+			</a>
+			<a id="instagram" class="footer__link" href="https://www.instagram.com/" target="_blank">
+			</a>
+			<a id="twitter" class="footer__link" href="https://www.twitter.com" target="_blank">
+			</a>
+			<a id="youtube" class="footer__link" href="https://www.youtube.com" target="_blank">
+			</a>
+		</nav>
+		<p>Copyright &copy; 2022 Arturo Gabriel Ramirez</p>
+	</footer>
+
+</body>
+
+</html>

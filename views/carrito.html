@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../images/icon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="../style/style.css">
+	<title>Carrito</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<h1 class="header__title">
+			<a class="header__title-link" href="../index.html"><img class="header__title-image" src="../images/logo.png"
+					alt="logo principal"></a>
+		</h1>
+		<nav class="center navbar">
+			<a href="articulos.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">storefront</a>
+			<a href="nosotros.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
+				location_away</a>
+			<a href="ayuda.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
+				contact_support</a>
+			<a href="carrito.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
+				shopping_cart
+			</a>
+		</nav>
+	</header>
+
+	<main>
+
+		<div class="padding divsearch">
+			<h2 class="divsearch__title page-title"><span
+					class="title-icon material-symbols-outlined">shopping_cart</span>Carrito</h2>
+		</div>
+
+		<form action="exito.html">
+			<div class="divflex">
+
+				<fieldset class="m2 divflex__datos">
+					<legend>Completa tu compra</legend>
+					<div class="divflex__control">
+						<label for="name">Nombre</label>
+						<input class="divflex__input" type="text" id="name" required
+							placeholder="Arturo Gabriel Ramirez">
+					</div>
+					<div class="divflex__control">
+						<label for="email">E-mail</label>
+						<input class="divflex__input" type="text" id="email" required placeholder="example@mail.com">
+					</div>
+					<div class="divflex__control">
+						<label for="direccion">Direccion</label>
+						<input class="divflex__input" type="text" id="direccion" required placeholder="Lucena 1835">
+					</div>
+					<div class="divflex__control">
+						<label for="provincia">Provincia</label>
+						<input class="divflex__input" type="text" id="provincia" required placeholder="Buenos Aires">
+					</div>
+					<div class=>
+						<label for="mensaje">Datos Adicionales</label>
+
+						<textarea class="datos-adicionales" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+					</div>
+				</fieldset>
+				<fieldset class="m2 divflex__compra">
+					<legend>Modificar Pedido</legend>
+					<h3>Cantidad</h3>
+					<div class="divflex">
+
+						<div>
+							<label for="1">1</label>
+							<input type="radio" name="eleccion" id="1" value="1">
+						</div>
+						<div>
+							<label for="2">2</label>
+							<input type="radio" name="eleccion" id="2" value="2">
+						</div>
+						<div>
+							<label for="3">3</label>
+							<input type="radio" name="eleccion" id="3" value="3">
+						</div>
+						<div>
+							<label for="otro">Otro</label>
+							<input type="radio" name="eleccion" id="otro">
+						</div>
+					</div>
+					<div>
+						<label for="especificar">Especificar</label>
+						<input type="number" id="especificar" placeholder="10">
+					</div>
+					<h3>Color del producto</h3>
+					<select name="color" id="color">
+						<option value="rojo">Rojo</option>
+						<option value="amarillo">Amarillo</option>
+						<option value="verde">Verde</option>
+						<option value="azul">Azul</option>
+						<option value="rosa">Rosa</option>
+					</select>
+					<h3>Horario preferente de entrega</h3>
+					<div></div>
+					<input type="checkbox" name="horario1" id="1ro">
+					<label for="1">De 9hs a 14hs</label>
+					<div>
+						<input type="checkbox" name="horario2" id="2do">
+						<label for="2">De 17hs a 21hs</label>
+					</div>
+					<div id="form-buttons">
+
+						<input class="button" type="reset" value="Cancelar">
+						<input class="button" type="submit" value="Enviar">
+					</div>
+				</fieldset>
+			</div>
+		</form>
+	</main>
+	<footer class="center footer">
+		<nav>
+			<a id="facebook" class="footer__link" href="https://www.facebook.com/" target="_blank">
+			</a>
+			<a id="instagram" class="footer__link" href="https://www.instagram.com/" target="_blank">
+			</a>
+			<a id="twitter" class="footer__link" href="https://www.twitter.com" target="_blank">
+			</a>
+			<a id="youtube" class="footer__link" href="https://www.youtube.com" target="_blank">
+			</a>
+		</nav>
+		<p>Copyright &copy; 2022 Arturo Gabriel Ramirez</p>
+	</footer>
+</body>
+
+</html>
