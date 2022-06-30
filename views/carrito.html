@@ -5,27 +5,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../images/icon.ico" rel="icon" type="image/x-icon" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../style/style.css">
 	<title>Carrito</title>
 </head>
 
 <body>
 
-	<header class="header">
-		<h1 class="header__title">
-			<a class="header__title-link" href="../index.html"><img class="header__title-image" src="../images/logo.png"
-					alt="logo principal"></a>
-		</h1>
-		<nav class="center navbar">
-			<a href="articulos.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">storefront</a>
-			<a href="nosotros.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
-				location_away</a>
-			<a href="ayuda.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
-				contact_support</a>
-			<a href="carrito.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
-				shopping_cart
-			</a>
-		</nav>
+	<header class="navbar nabvar-expand-lg header">
+		<div class="container-fluid">
+			<h1 class="navbar-brand header__title">
+				<a class="header__title-link" href="../index.html"><img class="header__title-image"
+						src="../images/logo.png" alt="logo principal"></a>
+			</h1>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<nav class="navbar navbar-nav">
+					<a href="articulos.html" class="nav-item nav-link nav-link--yellow">Articulos <span
+							class="material-symbols-outlined navbar__icon navbar__icon--yellow">storefront</span></a>
+					<a href="nosotros.html" class="nav-item nav-link nav-link--yellow">
+						Nosotros <span
+							class="material-symbols-outlined navbar__icon navbar__icon--yellow">location_away</span></a>
+					<a href="ayuda.html" class="nav-item nav-link nav-link--yellow">
+						Ayuda <span
+							class="material-symbols-outlined navbar__icon navbar__icon--yellow">contact_support</span></a>
+					<a href="carrito.html" class="nav-item nav-link nav-link--yellow">Carrito <span
+							class="material-symbols-outlined navbar__icon navbar__icon--yellow">shopping_cart</span></a>
+				</nav>
+			</div>
+		</div>
 	</header>
 
 	<main>
@@ -35,82 +48,91 @@
 					class="title-icon material-symbols-outlined">shopping_cart</span>Carrito</h2>
 		</div>
 
-		<form action="exito.html">
-			<div class="divflex">
-
-				<fieldset class="m2 divflex__datos">
-					<legend>Completa tu compra</legend>
-					<div class="divflex__control">
-						<label for="name">Nombre</label>
-						<input class="divflex__input" type="text" id="name" required
-							placeholder="Arturo Gabriel Ramirez">
-					</div>
-					<div class="divflex__control">
-						<label for="email">E-mail</label>
-						<input class="divflex__input" type="text" id="email" required placeholder="example@mail.com">
-					</div>
-					<div class="divflex__control">
-						<label for="direccion">Direccion</label>
-						<input class="divflex__input" type="text" id="direccion" required placeholder="Lucena 1835">
-					</div>
-					<div class="divflex__control">
-						<label for="provincia">Provincia</label>
-						<input class="divflex__input" type="text" id="provincia" required placeholder="Buenos Aires">
-					</div>
-					<div class=>
-						<label for="mensaje">Datos Adicionales</label>
-
-						<textarea class="datos-adicionales" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-					</div>
-				</fieldset>
-				<fieldset class="m2 divflex__compra">
-					<legend>Modificar Pedido</legend>
-					<h3>Cantidad</h3>
-					<div class="divflex">
-
-						<div>
-							<label for="1">1</label>
-							<input type="radio" name="eleccion" id="1" value="1">
+		<form action="exito.html" class="container-fluid my-4">
+			<div class="row row-cols-sm-1 row-cols-md-2 g-4">
+				<div class="col">
+					<fieldset>
+						<legend>Completa tu compra</legend>
+						<div class="mb-3">
+							<label class="form-label" for="name">Nombre</label>
+							<input class="form-control" type="text" id="name" required
+								placeholder="Arturo Gabriel Ramirez">
 						</div>
-						<div>
-							<label for="2">2</label>
-							<input type="radio" name="eleccion" id="2" value="2">
+						<div class="mb-3">
+							<label class="form-label" for="email">E-mail</label>
+							<input class="form-control" type="text" id="email" required placeholder="example@mail.com">
 						</div>
-						<div>
-							<label for="3">3</label>
-							<input type="radio" name="eleccion" id="3" value="3">
+						<div class="mb-3">
+							<label class="form-label" for="direccion">Direccion</label>
+							<input class="form-control" type="text" id="direccion" required placeholder="Lucena 1835">
 						</div>
-						<div>
-							<label for="otro">Otro</label>
-							<input type="radio" name="eleccion" id="otro">
+						<div class="mb-3">
+							<label class="form-label" for="provincia">Provincia</label>
+							<input class="form-control" type="text" id="provincia" required placeholder="Buenos Aires">
 						</div>
-					</div>
-					<div>
-						<label for="especificar">Especificar</label>
-						<input type="number" id="especificar" placeholder="10">
-					</div>
-					<h3>Color del producto</h3>
-					<select name="color" id="color">
-						<option value="rojo">Rojo</option>
-						<option value="amarillo">Amarillo</option>
-						<option value="verde">Verde</option>
-						<option value="azul">Azul</option>
-						<option value="rosa">Rosa</option>
-					</select>
-					<h3>Horario preferente de entrega</h3>
-					<div></div>
-					<input type="checkbox" name="horario1" id="1ro">
-					<label for="1">De 9hs a 14hs</label>
-					<div>
-						<input type="checkbox" name="horario2" id="2do">
-						<label for="2">De 17hs a 21hs</label>
-					</div>
-					<div id="form-buttons">
+						<div class="mb-3">
+							<label class="form-label" for="mensaje">Datos Adicionales</label>
 
-						<input class="button" type="reset" value="Cancelar">
-						<input class="button" type="submit" value="Enviar">
-					</div>
-				</fieldset>
+							<textarea class="form-control datos-adicionales" name="mensaje" id="mensaje" cols="30"
+								rows="10"></textarea>
+						</div>
+					</fieldset>
+				</div>
+
+				<div class="col">
+					<fieldset>
+						<legend>Modificar Pedido</legend>
+						<h3>Cantidad</h3>
+						<div class="my-4">
+
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="1">1</label>
+								<input class="form-check-input" type="radio" name="eleccion" id="1" value="1">
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="2">2</label>
+								<input class="form-check-input" type="radio" name="eleccion" id="2" value="2">
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="3">3</label>
+								<input class="form-check-input" type="radio" name="eleccion" id="3" value="3">
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="otro">Otro</label>
+								<input class="form-check-input" type="radio" name="eleccion" id="otro">
+							</div>
+						</div>
+						<div class="mb-4">
+							<label class="form-label" for="especificar">Especificar</label>
+							<input class="form-control" type="number" id="especificar" placeholder="10">
+						</div>
+						<div class="mb-4">
+							<h3>Color del producto</h3>
+							<select class="form-select" name="color" id="color">
+								<option value="rojo">Rojo</option>
+								<option value="amarillo">Amarillo</option>
+								<option value="verde">Verde</option>
+								<option value="azul">Azul</option>
+								<option value="rosa">Rosa</option>
+							</select>
+						</div>
+						<h3>Horario preferente de entrega</h3>
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" name="horario1" id="1ro">
+							<label class="form-check-label" for="1">De 9hs a 14hs</label>
+						</div>
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" name="horario2" id="2do">
+							<label class="form-check-label" for="2">De 17hs a 21hs</label>
+						</div>
+
+						<div class="mt-4">
+
+							<input class="btn button button--yellow" type="reset" value="Cancelar">
+							<input class="btn button button--yellow" type="submit" value="Enviar">
+						</div>
+					</fieldset>
+				</div>
 			</div>
 		</form>
 	</main>
@@ -127,6 +149,9 @@
 		</nav>
 		<p>Copyright &copy; 2022 Arturo Gabriel Ramirez</p>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>

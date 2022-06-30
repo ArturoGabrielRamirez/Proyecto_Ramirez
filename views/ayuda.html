@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../images/icon.ico" rel="icons" type="image/x-icon" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../style/style.css">
 	<title>Ayuda</title>
 </head>
@@ -12,21 +14,29 @@
 <body class="nomargin">
 
 
-	<header class="header">
-		<h1 class="header__title">
-			<a class="header__title-link" href="../index.html"><img class="header__title-image" src="../images/logo.png"
-					alt="logo principal"></a>
-		</h1>
-		<nav class="center navbar">
-			<a href="articulos.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">storefront</a>
-			<a href="nosotros.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
-				location_away</a>
-			<a href="ayuda.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
-				contact_support</a>
-			<a href="carrito.html" class="material-symbols-outlined navbar__icon navbar__icon--yellow">
-				shopping_cart
-			</a>
-		</nav>
+	<header class="navbar nabvar-expand-lg header">
+		<div class="container-fluid">
+			<h1 class="navbar-brand header__title">
+				<a class="header__title-link" href="../index.html"><img class="header__title-image" src="../images/logo.png"
+						alt="logo principal"></a>
+			</h1>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<nav class="navbar navbar-nav">
+					<a href="articulos.html"
+						class="nav-item nav-link nav-link--yellow">Articulos <span class="material-symbols-outlined navbar__icon navbar__icon--yellow">storefront</span></a>
+					<a href="nosotros.html" class="nav-item nav-link nav-link--yellow">
+						Nosotros <span class="material-symbols-outlined navbar__icon navbar__icon--yellow">location_away</span></a>
+					<a href="ayuda.html" class="nav-item nav-link nav-link--yellow">
+						Ayuda <span class="material-symbols-outlined navbar__icon navbar__icon--yellow">contact_support</span></a>
+					<a href="carrito.html" class="nav-item nav-link nav-link--yellow">Carrito <span class="material-symbols-outlined navbar__icon navbar__icon--yellow">shopping_cart</span></a>
+				</nav>
+			</div>
+		</div>
 	</header>
 
 	<main>
@@ -37,26 +47,29 @@
 
 		</div>
 
-
-		<p class=" center title2">Contactate con nuestros especialistas</p>
-		<div class="padding div-form">
-			<form action="exito.html">
-				<label for="name">Nombre</label>
-				<input class="divflex__input" type="text" id="name" placeholder="Arturo Gabriel Ramirez">
-				<br>
-				<label for="email">E-mail</label>
-				<input class="divflex__input" type="text" id="email" placeholder="example@mail.com">
-				<br>
-				<label for="consulta">Manda tu consulta</label>
-				<br>
-				<textarea class="datos-adicionales" name="consulta" id="consulta" cols="60" rows="5"></textarea>
-				<br>
-				<input class="button" type="reset" value="Cancelar">
-				<input class="button" type="submit" value="Enviar">
+		<div class="pt-4">
+			<p class=" center title2">Contactate con nuestros especialistas</p>
+			<div class="padding div-form">
+				<form action="exito.html">
+					<div class="mb-3">
+						<label class="form-label" for="name">Nombre</label>
+						<input class="form-control divflex__input" type="text" id="name" placeholder="Arturo Gabriel Ramirez">
+					</div>
+					<div class="mb-3">
+						<label class="form-label" for="email">E-mail</label>
+						<input class="form-control divflex__input" type="text" id="email" placeholder="example@mail.com">
+					</div>
+					<div class="mb-3">
+						<label class="form-label" for="consulta">Manda tu consulta</label>
+					<textarea class="form-control datos-adicionales" name="consulta" id="consulta" cols="60" rows="5"></textarea>
+				</div>
+				
+				<input class="btn button button--yellow" type="reset" value="Cancelar">
+				<input class="btn button button--yellow" type="submit" value="Enviar">
 			</form>
 
-
-
+			
+			
 			<section class="padding">
 				<h3 class="padding title2">Preguntas Frecuentes.</h3>
 				<ol class="list">
@@ -86,7 +99,7 @@
 						error dolore sed unde minus, velit, labore earum, recusandae. Tempora, incidunt harum expedita
 						sapiente
 						ipsa dolor, itaque facere.</p>
-					<h4 id="pregunta2">Que metodos de pago aceptan?</h4>
+						<h4 id="pregunta2">Que metodos de pago aceptan?</h4>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eveniet ipsum iste ad culpa,
 						suscipit
 						cum commodi, provident magni amet a explicabo quasi sit nihil enim reiciendis quas molestias
@@ -100,21 +113,22 @@
 						modi
 						harum maxime, quo? Suscipit, eos necessitatibus incidunt fuga temporibus similique quas. Amet,
 						accusantium! Est, illum?</p>
-					<h4 id="pregunta4">Si me cobraron y el pago me fue rechazado. Que hago?</h4>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sapiente perferendis
-						corrupti
-						incidunt, minima. Deserunt obcaecati inventore fugiat accusantium quae, dicta, asperiores
-						officia
-						praesentium velit eaque, maxime doloremque, iure modi.</p>
-					<h4 id="pregunta5">El producto nunca llego</h4>
-					<p>Lorem ipsum dolor it amet consectetur adipisicing, elit. Officiis, molestias error repudiandae
-						nobis,
-						doloremque tempora est omnis, voluptates magnam, optio sed odio debitis. Corrupti cupiditate nam
-						deleniti dolore mollitia? Vero!</p>
+						<h4 id="pregunta4">Si me cobraron y el pago me fue rechazado. Que hago?</h4>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sapiente perferendis
+							corrupti
+							incidunt, minima. Deserunt obcaecati inventore fugiat accusantium quae, dicta, asperiores
+							officia
+							praesentium velit eaque, maxime doloremque, iure modi.</p>
+							<h4 id="pregunta5">El producto nunca llego</h4>
+							<p>Lorem ipsum dolor it amet consectetur adipisicing, elit. Officiis, molestias error repudiandae
+								nobis,
+								doloremque tempora est omnis, voluptates magnam, optio sed odio debitis. Corrupti cupiditate nam
+								deleniti dolore mollitia? Vero!</p>
+							</div>
+						</section>
+					</div>
 				</div>
-			</section>
-		</div>
-	</main>
+				</main>
 	<footer class="center footer">
 		<nav>
 			<a id="facebook" class="footer__link" href="https://www.facebook.com/" target="_blank">
@@ -128,6 +142,9 @@
 		</nav>
 		<p>Copyright &copy; 2022 Arturo Gabriel Ramirez</p>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
