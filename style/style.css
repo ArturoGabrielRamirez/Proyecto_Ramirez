@@ -438,14 +438,14 @@ main {
 
 @media only screen and (min-width: 768px) {
     .div-form {
-        width: 75%;
+        width: 90%;
 
     }
 }
 
 @media only screen and (min-width: 992px) {
     .div-form {
-        width: 50%;
+        width: 75%;
 
     }
 }
