@@ -1,0 +1,25 @@
+{
+  "name": "proyecto_ramirez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss -o css scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run  build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturoGabrielRamirez/Proyecto_Ramirez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturoGabrielRamirez/Proyecto_Ramirez/issues"
+  },
+  "homepage": "https://github.com/ArturoGabrielRamirez/Proyecto_Ramirez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

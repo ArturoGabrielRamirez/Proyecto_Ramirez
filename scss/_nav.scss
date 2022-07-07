@@ -1,0 +1,25 @@
+.nav {
+    text-decoration: none;
+    font-size: 1.5rem;
+    flex-direction: row;
+
+    &-link {
+        color: white;
+
+        &--yellow:hover {
+            color: $contrastColor;
+
+            .nav__icon--yellow {
+                color: $contrastColor;
+            }
+        }
+    }
+
+    &__icon {
+        color: white;
+        margin-left: 15px;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+}

@@ -118,64 +118,6 @@ main {
 
 
 
-
-
-/* START BLOQUE HEADER */
-.header {
-    background-color: #DB090A;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
-}
-
-.header__title {
-    width: 100px;
-    margin: 0;
-}
-
-.header__title-image {
-    width: 100%;
-}
-
-/* END BLOQUE HEADER */
-
-
-
-
-
-/* START BLOQUE NAVBAR */
-.navbar {
-    text-decoration: none;
-    font-size: 1.5rem;
-    flex-direction: row;
-}
-
-.nav-link {
-    color: white;
-}
-
-.nav-link--yellow:hover {
-    color: #FFCB05
-}
-
-.navbar__icon {
-    color: white;
-    margin-left: 15px;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.nav-link--yellow:hover .navbar__icon--yellow {
-    color: #FFCB05;
-}
-
-
-/* END BLOQUE NAVBAR */
-
-
-
-
-
-
-
 /* START BLOQUE DIVSEARCH */
 
 .divsearch {
@@ -263,76 +205,6 @@ main {
 }
 
 /* END BLOQUE DIVSEARCH */
-
-
-
-
-
-
-/* START BLOQUE SECTION */
-
-
-.product {
-    transition: all 0.3s;
-    border-radius: 3px;
-    background-color: #EF9A9F;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.card--zoomin:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.product__link {
-    text-decoration: none;
-    color: white;
-}
-
-.button--yellow:hover {
-    color: #FFCB05;
-    background-color: #000000;
-}
-
-
-.product__icon {
-    margin-left: 10px;
-}
-
-.product__image {
-    width: 100%;
-    border-radius: 3px;
-    height: 200px;
-    object-fit: cover;
-    background-color: #ffffff;
-}
-
-/* END BLOQUE SECTION */
-
-
-
-
-
-/* START BLOQUE FOOTER */
-
-.footer {
-    background-color: #DB090A;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 200;
-}
-
-.footer__link {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-}
-
-/* END BLOQUE FOOTER */
-
 
 
 /* START BLOQUE EXITO [EXITO.HTML] */
@@ -458,16 +330,3 @@ main {
 }
 
 /* END BLOQUE AYUDA [AYUDA.HTML] */
-
-
-/* START BLOQUE BOOTSTRAP RESET */
-.card {
-    transition: all 0.3s ease;
-}
-
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
-}
-
-/* END BLOQUE BOOTSTRAP RESET */
