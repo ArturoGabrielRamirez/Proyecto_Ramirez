@@ -1,0 +1,17 @@
+.datos-adicionales {
+    resize: none;
+}
+
+
+#form-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .divflex__Compra {
+        width: 50%;
+    }
+}

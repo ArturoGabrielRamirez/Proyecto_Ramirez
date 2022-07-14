@@ -1,0 +1,64 @@
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+
+.list__link {
+    text-decoration: none;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.padding {
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.px {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.tal {
+    text-align: left;
+}
+
+.button {
+    background:map-get($map: $colors, $key: "primary" );
+    color: white;
+    text-decoration: none;
+}
+
+.title-icon {
+    position: relative;
+    top: 7px;
+}
+
+#facebook {
+    background-image: url("../images/facebook.png");
+}
+
+#twitter {
+    background-image: url("../images/twitter.png");
+}
+
+#instagram {
+    background-image: url("../images/instagram.png");
+}
+
+#youtube {
+    background-image: url("../images/youtube.png");
+}

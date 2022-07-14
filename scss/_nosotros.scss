@@ -1,0 +1,37 @@
+.divflex {
+
+    @extend .main;
+    padding: 40px 15px 40px 15px;
+}
+
+.divtext__paragraph {
+    text-align: justify;
+}
+
+.main__image {
+    padding-right: 15px;
+}
+
+.main__iframe {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .divflex {
+        @include flexDir(row);
+    }
+
+    .main__image {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .main__image {
+        width: 100%;
+    }
+}

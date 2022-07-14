@@ -1,5 +1,14 @@
-//colors
+//COLORS
 $primaryColor: #DB090A;
 $secondaryColor: #211D1E;
 $contrastColor: #FFCB05;
-$cardColor: #EF9A9F
+$cardColor: #EF9A9F;
+
+//COLORS MAP
+
+$colors: (
+  "primary": $primaryColor,
+  "secondary": $secondaryColor,
+  "contrast": $contrastColor,
+  "card": $cardColor
+);

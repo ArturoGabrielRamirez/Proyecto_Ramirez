@@ -1,0 +1,82 @@
+.divsearch {
+    background-color: $secondaryColor;
+    background-image: url("../images/cp1.jpg");
+    background-size: cover;
+    background-position: center;
+    @extend .main;
+    
+    justify-content: center;
+    height: 260PX;
+
+    &__title {
+        color: white;
+        mix-blend-mode: difference;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    
+    &__label {
+        color: white;
+        mix-blend-mode: difference;
+        font-size: 28px;
+        position: relative;
+        top: 8px;
+    }
+
+    &__input {
+        border-radius: 3px;
+        padding: 4px 8px;
+        border: none;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    .divsearch__title,
+    .title-icon {
+        font-size: 1.5rem;
+    }
+
+    .navbar__icon {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+
+    .divsearch__title,
+    .title-icon {
+        font-size: 2rem;
+    }
+
+    .navbar__icon {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .divsearch__title,
+    .title-icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .divsearch__title,
+    .title-icon {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .divsearch__title,
+    .title-icon {
+        font-size: 3.5rem;
+
+    }
+}

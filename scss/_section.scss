@@ -1,7 +1,7 @@
 .product {
     transition: all 0.3s;
     border-radius: 3px;
-    background-color: $cardColor;
+    background-color: map-get($map: $colors, $key: "card" );
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
     &__link {
@@ -38,6 +38,6 @@
 }
 
 .button--yellow:hover {
-    color: $contrastColor;
-    background-color: $secondaryColor;
+    color: map-get($map: $colors, $key: "contrast" );
+    background-color: map-get($map: $colors, $key: "secondary" );
 }

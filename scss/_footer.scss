@@ -1,6 +1,5 @@
 .footer {
-    background-color: $primaryColor;
-    padding: 0.5rem;
+    background-color:map-get($map: $colors , $key: "primary" );
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;

@@ -1,0 +1,11 @@
+@mixin flexDir($direction) {
+    @if $direction =="row" {
+        flex-direction: row;
+    }
+
+    @else if $direction =="column" {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
