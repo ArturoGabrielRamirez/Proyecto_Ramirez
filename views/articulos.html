@@ -22,14 +22,14 @@
 				<a class="header__title-link" href="../index.html"><img class="header__title-image"
 						src="../images/logo.png" alt="logo principal"></a>
 			</h1>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvas" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<nav class="ms-auto nav navbar navbar-nav">
-					<a href="carrito.html" class="nav-item nav-link nav-link--yellow">Articulos <span
+			<div class="offcanvas offcanvas-start drawer justify-content-center" id="offcanvas">
+				<nav class="ms-lg-auto nav navbar navbar-nav flex-column flex-lg-row ">
+					<a href="articulos.html" class="nav-item nav-link nav-link--yellow">Articulos <span
 							class="material-symbols-outlined nav__icon nav__icon--yellow">storefront</span></a>
 					<a href="nosotros.html" class="nav-item nav-link nav-link--yellow">
 						Nosotros <span
@@ -52,161 +52,163 @@
 		</div>
 
 		<section class="py-4">
-			<div class="container-fluid row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4">
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/1.jpg" class="card-img-top" alt="Gorros Pokemon">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Gorros Pokemon</h3>
-							<p class="card-text text-truncate">Gorros con diseño Pokemon a eleccion</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$1800</p>
+			<div class="container">
+				<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4">
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/1.jpg" class="card-img-top" alt="Gorros Pokemon">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Gorros Pokemon</h3>
+								<p class="card-text text-truncate">Gorros con diseño Pokemon a eleccion</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$1800</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/2.jpg" class="card-img-top" alt="Funko Pop Eevee">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Funko Pop Eevee</h3>
-							<p class="card-text text-truncate">Muñeco Funko Pop coleccionable</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$2100</p>
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/2.jpg" class="card-img-top" alt="Funko Pop Eevee">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Funko Pop Eevee</h3>
+								<p class="card-text text-truncate">Muñeco Funko Pop coleccionable</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$2100</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/3.jpg" class="card-img-top" alt="Pokeball Plus">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Pokeball Plus</h3>
-							<p class="card-text text-truncate">Joystick inalámbrico Ninintendo</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$2250</p>
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/3.jpg" class="card-img-top" alt="Pokeball Plus">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Pokeball Plus</h3>
+								<p class="card-text text-truncate">Joystick inalámbrico Ninintendo</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$2250</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/4.jpg" class="card-img-top" alt="Pikachu Toy">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Pikachu Toy</h3>
-							<p class="card-text text-truncate">Muñecos picachu y pichu coleccionables</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$1890</p>
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/4.jpg" class="card-img-top" alt="Pikachu Toy">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Pikachu Toy</h3>
+								<p class="card-text text-truncate">Muñecos picachu y pichu coleccionables</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$1890</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/5.jpg" class="card-img-top" alt="Llaveros Pokemon">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Llaveros Pokemon</h3>
-							<p class="card-text text-truncate">Coleccion Aleatoria de llaveros. Hazte con todos!</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$1500</p>
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/5.jpg" class="card-img-top" alt="Llaveros Pokemon">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Llaveros Pokemon</h3>
+								<p class="card-text text-truncate">Coleccion Aleatoria de llaveros. Hazte con todos!</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$1500</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/6.jpg" class="card-img-top" alt="Pokemon Ruby y Zafiro">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Pokemon Ruby y Zafiro</h3>
-							<p class="card-text text-truncate">Hazte con este combo del 40% con esta super oferta</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$1980</p>
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/6.jpg" class="card-img-top" alt="Pokemon Ruby y Zafiro">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Pokemon Ruby y Zafiro</h3>
+								<p class="card-text text-truncate">Hazte con este combo del 40% con esta super oferta</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$1980</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/7.jpg" class="card-img-top" alt="Pokemon Ultra Sol y Ultra Luna">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Pokemon Ultra Sol y Ultra Luna</h3>
-							<p class="card-text text-truncate">Ya disponible la nueva region!</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$2200</p>
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/7.jpg" class="card-img-top" alt="Pokemon Ultra Sol y Ultra Luna">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Pokemon Ultra Sol y Ultra Luna</h3>
+								<p class="card-text text-truncate">Ya disponible la nueva region!</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$2200</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/8.jpg" class="card-img-top" alt="Estuche Nintendo">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Estuche Nintendo</h3>
-							<p class="card-text text-truncate">Transporta tu consola con la mayor proteccion y comodidad
-							</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$1700</p>
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/8.jpg" class="card-img-top" alt="Estuche Nintendo">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Estuche Nintendo</h3>
+								<p class="card-text text-truncate">Transporta tu consola con la mayor proteccion y comodidad
+								</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$1700</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-
-
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/evees.jpg" class="card-img-top" alt="Peluches coleccionables">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Peluches coleccionables</h3>
-							<p class="card-text text-truncate">Peluche de evee y sus evoluciones</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$4350</p>
+	
+	
+	
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/evees.jpg" class="card-img-top" alt="Peluches coleccionables">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Peluches coleccionables</h3>
+								<p class="card-text text-truncate">Peluche de evee y sus evoluciones</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$4350</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/perladiamante.jpg" class="card-img-top" alt="Pokemon Perla y Diamante">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Pokemon Perla y Diamante</h3>
-							<p class="card-text text-truncate">Redescubri esta maravillosa entrega!</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$3980</p>
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/perladiamante.jpg" class="card-img-top" alt="Pokemon Perla y Diamante">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Pokemon Perla y Diamante</h3>
+								<p class="card-text text-truncate">Redescubri esta maravillosa entrega!</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$3980</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/headphones.png" class="card-img-top" alt="Headphones">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Headphones</h3>
-							<p class="card-text text-truncate">Auriculares Pokemon con cancelador de ruidos</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$2800</p>
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/headphones.png" class="card-img-top" alt="Headphones">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Headphones</h3>
+								<p class="card-text text-truncate">Auriculares Pokemon con cancelador de ruidos</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$2800</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/joystick.jpg" class="card-img-top" alt="Joystick">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Joystick</h3>
-							<p class="card-text text-truncate">Joystick Pokemon inalambrico. con alta capacidad de carga
-							</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$3990</p>
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/joystick.jpg" class="card-img-top" alt="Joystick">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Joystick</h3>
+								<p class="card-text text-truncate">Joystick Pokemon inalambrico. con alta capacidad de carga
+								</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$3990</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div>
-					<div class="card card--zoomin">
-						<img src="../images/sun.jpg" class="card-img-top" alt="Pokemon Sun">
-						<div class="card-body product">
-							<h3 class="card-title text-truncate">Pokemon Sun</h3>
-							<p class="card-text text-truncate">Juego Pokemon Sun para Nintendo 3DS</p>
-							<a href="carrito.html" class="btn button button--yellow">Comprar</a>
-							<p class="product__description">$2999</p>
+					<div>
+						<div class="card card--zoomin">
+							<img src="../images/sun.jpg" class="card-img-top" alt="Pokemon Sun">
+							<div class="card-body product">
+								<h3 class="card-title text-truncate">Pokemon Sun</h3>
+								<p class="card-text text-truncate">Juego Pokemon Sun para Nintendo 3DS</p>
+								<a href="carrito.html" class="btn button button--yellow">Comprar</a>
+								<p class="product__description">$2999</p>
+							</div>
 						</div>
-					</div>
+					</div>	
 				</div>
 			</div>
 
