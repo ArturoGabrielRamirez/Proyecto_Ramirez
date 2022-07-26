@@ -4,12 +4,22 @@
     padding: 40px 15px 40px 15px;
 }
 
-.divtext__paragraph {
-    text-align: justify;
+.divtext {
+
+    padding-right: 32px;
+    padding-left: 16px;
+
+
+    &__paragraph {
+        text-align: justify;
+
+    }
+
 }
 
 .main__image {
-    padding-right: 15px;
+    padding-right: 16px;
+    padding-left: 32px;
 }
 
 .main__iframe {
