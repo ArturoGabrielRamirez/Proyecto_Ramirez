@@ -7,7 +7,8 @@
 .divtext {
 
     padding-right: 32px;
-    padding-left: 16px;
+    padding-left: 32px;
+    margin-top: 16px;
 
 
     &__paragraph {
@@ -18,8 +19,9 @@
 }
 
 .main__image {
-    padding-right: 16px;
+    padding-right: 32px;
     padding-left: 32px;
+    margin-bottom: 16px;
 }
 
 .main__iframe {
@@ -36,6 +38,17 @@
         width: 50%;
         object-fit: cover;
     }
+
+    .main__image {
+        padding-right: 16px;
+        padding-left: 32px;
+    }
+
+    .divtext {
+
+        padding-right: 32x;
+        padding-left: 16px;
+}
 }
 
 

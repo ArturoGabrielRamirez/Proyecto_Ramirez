@@ -144,6 +144,8 @@ html {
   .card-img-top {
     height: 250px;
     object-fit: cover; }
+  .card__text {
+    height: 60px; }
   .card--zoomin:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -242,13 +244,15 @@ html {
 
 .divtext {
   padding-right: 32px;
-  padding-left: 16px; }
+  padding-left: 32px;
+  margin-top: 16px; }
   .divtext__paragraph {
     text-align: justify; }
 
 .main__image {
-  padding-right: 16px;
-  padding-left: 32px; }
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-bottom: 16px; }
 
 .main__iframe {
   width: 100%; }
@@ -258,7 +262,13 @@ html {
     flex-direction: row; }
   .main__image {
     width: 50%;
-    object-fit: cover; } }
+    object-fit: cover; }
+  .main__image {
+    padding-right: 16px;
+    padding-left: 32px; }
+  .divtext {
+    padding-right: 32x;
+    padding-left: 16px; } }
 
 @media only screen and (min-width: 1200px) {
   .main__image {

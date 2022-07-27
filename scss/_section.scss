@@ -30,11 +30,16 @@
         object-fit: cover;
     }
 
+    &__text{
+        height: 60px;
+    }
+    
     &--zoomin:hover {
         cursor: pointer;
         transform: scale(1.1);
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
     }
+
 }
 
 .button--yellow:hover {
