@@ -4,7 +4,6 @@
     background-size: cover;
     background-position: center;
     @extend .main;
-    
     justify-content: center;
     height: 260PX;
 
@@ -14,7 +13,7 @@
         margin: 0;
         font-size: 1.2rem;
     }
-    
+
     &__label {
         color: white;
         mix-blend-mode: difference;
