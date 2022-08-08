@@ -82,6 +82,9 @@ html {
   position: relative;
   top: 7px; }
 
+.custom-icon {
+  font-size: 3rem; }
+
 #facebook {
   background-image: url("../images/facebook.png"); }
 
@@ -157,7 +160,7 @@ html {
 
 .divsearch {
   background-color: #211D1E;
-  background-image: url("../images/cp1.jpg");
+  background-image: url("../images/backgroundimage.png");
   background-size: cover;
   background-position: center;
   justify-content: center;
